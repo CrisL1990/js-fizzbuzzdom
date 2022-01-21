@@ -19,28 +19,29 @@ if(boxNumber > 0){
     
         //Genera box FIZZ
         if(i % 3 == 0 && i % 5 != 0){
-            container.innerHTML = container.innerHTML + `<div class="box fizz">` + "Fizz" + `</div>`;
+            container.innerHTML += `<div class="box fizz">${"Fizz"}</div>`;
         }
 
         //Genera box BUZZ
         else if(i % 3 != 0 && i % 5 == 0){
-            container.innerHTML = container.innerHTML + `<div class="box buzz">` + "Buzz" + `</div>`;
+            container.innerHTML += `<div class="box buzz">${"Buzz"}</div>`;
         }
 
         //Genera box FIZZBUZZ
         else if(i % 3 == 0 && i % 5 == 0){
-            container.innerHTML = container.innerHTML + `<div class="box fizz-buzz">` + "FizzBuzz" + `</div>`;
+            container.innerHTML += `<div class="box fizz-buzz">${"FizzBuzz"}</div>`;
         }
             
         //Genera box con numeri non divisibili per 3 o 5
         else{
-            container.innerHTML = container.innerHTML + `<div class="box number">` + i + `</div>`;
+            container.innerHTML += `<div class="box number">${i}</div>`;
         }
 
     }
 }
 
-else{
+//Messaggio di errore
+else if(boxNumber <= 0 || isNaN(boxNumber)){
     alert("Per favore inserisci un numero maggiore di 0")
 }
 
