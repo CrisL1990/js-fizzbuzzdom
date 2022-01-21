@@ -10,8 +10,8 @@ const container = document.getElementById("container");
 //Chiede all'utente quanti numeri vuole generare e converte valore da stringa a int
 let boxNumber = parseInt(prompt("Inserisci quanti numeri vuoi generare: ")) 
 
-//Verifica che il boxNumber abbia un valore superiore a 0 e genera un
-//messaggio di errore in caso contrario
+/*Verifica che il boxNumber abbia un valore superiore a 0 e genera un
+messaggio di errore in caso contrario*/
 if(boxNumber > 0){
 
     //Inizia a scorrere i numeri da 1 a valore di boxNumber uno ad uno
