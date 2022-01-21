@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(8, 59, 76);
+}
+
+.titolo{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+
+#container{
+    max-width: 100px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box{
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    background-color: rgb(18, 137, 178);
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fizz{
+    background-color: rgb(8, 214, 159);
+}
+
+.buzz{
+    background-color: rgb(255, 209, 102);
+}
+
+.fizz-buzz{
+    background-color: rgb(240, 70, 111);
+}
